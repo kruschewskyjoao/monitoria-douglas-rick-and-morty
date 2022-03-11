@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 
 class Home extends React.Component {
@@ -7,7 +7,7 @@ class Home extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Header path='/' Component={ Header }/>
+          <Route path='/' component={ Header }/>
         </Switch>
       </BrowserRouter>
     );
